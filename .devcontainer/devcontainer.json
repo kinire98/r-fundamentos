@@ -1,0 +1,19 @@
+{
+  "name": "Solo R (Jupyter)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "REditorSupport.r",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "remoteEnv": {
+    "PATH": "/opt/venv/bin:${containerEnv:PATH}"
+  },
+  "remoteUser": "root"
+}
